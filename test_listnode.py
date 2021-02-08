@@ -1,40 +1,5 @@
 # Definition for singly-linked list.
 
-#
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-#
-#     def __repr__(self):
-#         return f'ListNode(val={self.val}, next={self.next})'
-#
-#
-# class Solution:
-#     def addTwoNumbers(self, l1, l2):
-#         """
-#         :type l1: ListNode
-#         :type l2: ListNode
-#
-#         """
-#         head = ListNode(0)
-#         result_tail = head
-#         carry = 0
-#
-#         while l1 or l2 or carry:
-#             val1 = (l1.val if l1 else 0)
-#             val2 = (l2.val if l2 else 0)
-#             carry, out = divmod(val1 + val2 + carry, 10)
-#
-#             result_tail.next = ListNode(out)
-#             result_tail = result_tail.next
-#
-#             l1 = (l1.next if l1 else None)
-#             l2 = (l2.next if l2 else None)
-#
-#         return head.next
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
